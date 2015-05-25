@@ -3,7 +3,7 @@
 class ValidatePassword {
 
 	const MIN_LENGTH = 6;
-	const MAX_LENGTH = 28;
+	const MAX_LENGTH = 8;
 
 	public function validLength($password) {
 		$passLength = strlen($password);
