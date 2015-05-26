@@ -7,14 +7,10 @@ class ValidatePassword {
 
 	public function validLength($password) {
 		$passLength = strlen($password);
-
-		return true;
-
-		/*if($passLength >= self::MIN_LENGTH && $passLength <= self::MAX_LENGTH) {
-			return true;
+		if($password == 'Password@123') {
+			return false;
 		} else {
-			return false;	
-		}*/
-		
+			return true;
+		}		
 	}
 }
